@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HCI ASSIGNMENT-02</title>
+</head>
+<body>
+    <header class="top-border">
+        <div class="container">
+            <h1 margin=0;>Shark charity website</h1>
+        </div>
+    </header>
+    <main class="survey-container">
+        <section class="survey-legend">
+            <h2>Survey </h2>
+            
+        </section>
+        <section class="survey-questions">
+            <fieldset class="survey-fieldset">
+                <legend>Shark Conservation Survey</legend>
+                <div class="survey-question">
+                    <span>How familiar are you with the current status of shark populations and their conservation needs?</span>
+                    <br>
+                    <label for="familiar-very"><input  required type="radio" name="familiarity" id="familiar-very" value="very-familiar">Very Familiar</label>
+                    <label for="familiar-somewhat"><input required type="radio" name="familiarity" id="familiar-somewhat" value="somewhat-familiar">Somewhat Familiar</label>
+                    <label for="familiar-not"><input required type="radio" name="familiarity" id="familiar-not" value="not-familiar">Not Familiar at All</label>
+                </div>
+                <div class="survey-question">
+                    <span>Are you interested in sharks in general?</span>
+                    <br>
+                    <label for="interest-yes"><input required type="radio" name="interest" id="interest-yes" value="yes">Yes</label>
+                    <label for="interest-no"><input required type="radio" name="interest" id="interest-no" value="no">No</label>
+                </div>
+                <div class="survey-question">
+                    <span>What motivates you to support shark conservation efforts? (Select all that apply)</span>
+                    <br>
+                    <label for="motivation-ecological"><input required type="checkbox" name="motivation" id="motivation-ecological" value="ecological-role">Concern for the ecological role of sharks in the oceans.<br></label>
+                    <label for="motivation-biodiversity"><input required type="checkbox" name="motivation" id="motivation-biodiversity" value="biodiversity">Belief in preserving biodiversity.<br></label>
+                    <label for="motivation-protecting"><input required type="checkbox" name="motivation" id="motivation-protecting" value="protecting-endangered">Interest in protecting endangered species.<br></label>
+                    <label for="motivation-awareness"><input required type="checkbox" name="motivation" id="motivation-awareness" value="awareness">Awareness of the impact of shark finning and overfishing.<br></label>
+                    <label for="motivation-contribute"><input required type="checkbox" name="motivation" id="motivation-contribute" value="contribute-ecosystem">A desire to contribute to marine ecosystem health.<br></label>
+                </div>
+                <div class="survey-question">
+                    <label for="donation-amount">How much do you want to donate?</label>
+                    <input type="text" name="donation-amount" id="donation-amount">
+                </div>
+            </fieldset>
+        </section>
+        <section class="personal-details">
+            <fieldset class="personal-details-fieldset">
+                <legend>Personal Details</legend>
+                <div class="personal-details-input">
+                    <label required for="name">Name:</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+                <div class="personal-details-input">
+                    <label for="email">Email:</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="personal-details-input">
+                    <label required for="birth-date">Birth Date:</label>
+                    <input required type="date" name="birth-date" id="birth-date">
+                </div>
+            </fieldset>
+        </section>
+            <form>
+                <button type="button" class="submit-button" onclick="submitForm()">SUBMIT</button>
+            </form>
+        </main>
+    
+        <script>
+            // JavaScript function to handle form submission
+            function submitForm() {
+                // You can add your form submission logic here
+                // For example, you can collect form data and send it to a server
+                // or perform any other necessary actions.
+                
+                // For demonstration purposes, let's show an alert:
+                alert("Form submitted successfully!");
+            }
+        </script>
+    </main>
+</body>
+</html>
