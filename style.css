@@ -151,3 +151,88 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background-image: url(https://i.pinimg.com/originals/78/f3/76/78f376395675123e5afaeb5397af2ba5.gif);
+        background-repeat: repeat;
+      }
+      
+      .header {
+        padding: 15px; /* Increase padding for better mobile visibility */
+        text-align: center;
+        background-image: url(https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif);
+        background-repeat: repeat;
+      }
+      
+      .header h1 {
+        font-size: 30px; /* Reduce font size for mobile */
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .topnav a {
+        text-align: center; /* Center text in the navigation */
+        padding: 10px 0;
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .leftcolumn {
+        width: 100%; /* Use full width for mobile */
+      }
+      
+      .rightcolumn {
+        width: 100%; /* Use full width for mobile */
+        padding-left: 0; /* Remove left padding for mobile */
+      }
+      
+      .image {
+        display: block; /* Display images as blocks for mobile */
+        width: 100%; /* Use full width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 0; /* Remove right margin for mobile */
+        margin-bottom: 15px; /* Add bottom margin for spacing */
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: left;
+        background: black;
+        margin-top: 20px;
+        color: white;
+        font-size: 12px; /* Specify font size for mobile */
+      }
+      
+      .bottom-section {
+        text-align: center; /* Center content in the bottom section */
+      }
+      
+      .main {
+        height: auto; /* Adjust height as needed */
+        margin: 5%;
+        padding: 1%;
+      }
+  }
