@@ -2,58 +2,121 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="stylesheet" href="stylb.css"/>
+    <link rel="stylesheet" href="styled.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<style>
+  .social-icons {
+    width: 40vw;
+    height: 30vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
+.social-icons a {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+</style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Justin Hadinata</h1>
-  <div class="bottom-section">
-    <img class="image" src="https://media.discordapp.net/attachments/1159701745044299888/1161210643140067349/ProfilePicture.jpg?ex=653778af&is=652503af&hm=5fcf5394f47bb9264b072d6832246a0349c0a8302abfbf93369f0fa4a13e840e&=&width=549&height=733" alt="my face">
-    <p class="main">2702298236 - 29/09/2005</p>
+  <main>
+    <div class="container-info">
+      <div class="row mx-3 my-4 ">
+        <div class="col-md-2 my-3 rounded">
+          <img src="https://media.discordapp.net/attachments/1159701745044299888/1168151513248579644/ProfilePicture.jpg?ex=6550b8df&is=653e43df&hm=d79fdd50c8bb381d2b1b7d20704234efb5160674a4e929718ef811147d861f47&=&width=549&height=733" width="200px" alt="Profile Picture" class="shadow-lg img-fluid">
+        </div>
+        <div class="col-md-8">
+          <h1 class="display-5 shadow-lg px-3 my-3">Justin Hadinata - 2702298236</h1>
+          <h4 class="shadow-lg mt-4 display-6 px-3">Portofolio</h4>
+          <p class="shadow-lg mt-4 py-3 px-3">This Website is a reflection of my journey as a computer science student and showcases the skills and programming languages I've mastered. Through this platform, I aim to demonstrate my proficiency in a variety of programming languages, from Java to Python, and highlight the projects I've undertaken during my academic journey. </p>
+
+        </div>
+        
+      </div>
+    </div>
+  </main>
+<nav class="navbar navbar-expand-lg bg-dark border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="Edu.html">My Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Pro.html">Programming Language</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Hobby.html">Hobby</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container my-4  mx-5">
+  <div class="row">
+          <div class="card text-bg-dark mb-3 my-3 mx-3 w-75">
+              <div class="card-header">
+                <i class="bi bi-asterisk float-end my-2"></i>
+              <h4 class="display-7 my-1">About Me</h1>
+              </div>
+              <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">
+                Born on September 29, 2005, in Jakarta, I've spent most of my life on the picturesque island of Bangka, where the serene beauty of nature intertwined with the urban charm of the cityscape. Growing up in this unique environment has instilled in me a profound appreciation for the natural world and a vibrant multicultural backdrop that has enriched my life experiences.
+
+                From an early age, my fascination with storytelling was ignited through my love for films and books. The power of a well-crafted story has been a constant source of joy and inspiration, shaping not only my interests but also my perspective on the world. I've found solace in the captivating narratives of authors and filmmakers who have the ability to transport readers and viewers to different realms and evoke a wide range of emotions.
+                
+                One of my favorite books, which has left an indelible mark on me, is "The Subtle Art of Not Giving a F*ck" by Mark Manson. This unconventional self-help book has challenged me to reevaluate my priorities and to embrace a more balanced and authentic approach to life. Additionally, "How to Win Friends and Influence People" by Dale Carnegie has been another literary gem that has guided me in understanding the dynamics of human relationships and effective communication.
+                
+                Beyond the world of books and movies, I have always had an ambition to succeed and a deep appreciation for the value of financial independence. Money, to me, represents not just a means of acquiring material possessions but also a tool for achieving personal goals and making a positive impact on the world. With a keen eye on the future, I have aspirations to work overseas, particularly in the vibrant and dynamic city-state of Singapore. The opportunities for personal and professional growth, combined with Singapore's cosmopolitan atmosphere, have made it a compelling destination on my career journey.
+                
+                In summary, my life journey, born in Jakarta and nurtured on the idyllic island of Bangka, has been colored by my passion for stories, self-improvement, and the pursuit of financial success. As I embrace the wisdom from the books that have inspired me and set my sights on a global career, I look forward to the adventures and challenges that life will undoubtedly bring my way.
+              </p>
+              <a href="#" class="btn btn-primary">Go back to navigation</a>
+
+              </div>
+              
+          </div>
+          <div class="card text-bg-dark my-3 py-3" style="width: 15rem;">
+              <img src="https://i.pinimg.com/564x/df/7e/12/df7e12fa1b7dbfff95702aa36a23a411.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Social</h5>
+                <div class="my-4 social-icons">
+                  <a  href="https://github.com/JustinCodeCS/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class= my-2 height="100vw" width="100vw" alt="GitHub"></a>
+                  <a  href="https://www.instagram.com/justinhadinata_05/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" class= my-2 height="100vw" width="100vw" alt="Instagram"></a>
+                  <a  href="https://wa.me/1234567890" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" class= my-2 height="100vw" width="100vw" alt="Whatsapp"></a>
+              </div>
+                <a href="#" class="btn btn-primary">Go back to navigation</a>
+              </div>
+          </div>
+      </div>
   </div>
 </div>
-
-<div class="topnav">
-  <a href="Edu.html">My Education</a>
-  <a href="Pro.html">Programming Language</a>
-  <a href="Hobby.html">Hobby</a>
-  <a href="index.html" style="float:right">Back</a>
-</div>
-
-<div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>My Website?</h2>
-        <h5>What is it even about?</h5>
-        <div class="fakeimg" style="height:200px;">Here, you'll discover the unique journey that is my life. From my passions and interests to the experiences that have shaped me, this space is dedicated to sharing my story with you. Whether you're seeking inspiration, information, or simply looking to connect, I invite you to explore the pages ahead and get to know me a little better.</div>
-        <p>EXPLORE MY JOURNEY!</p>
-        <p>Education: Discover my academic journey and achievements.</p>
-        <p>Hobbies: Dive into my interests and passions.</p>
-        <p>Programming Skills: Learn about my technical expertise and projects..</p>
-      </div>
-    </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2 background="black">Socials:</h2>
-        <div class="social-icons">
-            <a href="https://github.com/JustinCodeCS/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="100vw" width="100vw" alt="GitHub"></a>
-            <a href="https://www.instagram.com/justinhadinata_05/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" height="100vw" width="100vw" alt="Instagram"></a>
-            <a href="https://wa.me/1234567890" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" height="100vw" width="100vw" alt="Whatsapp"></a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>About Me</h3>
-        <p>Born on September 29, 2005, in Jakarta, I've spent most of my life on the picturesque island of Bangka. My love for films and books has been a constant source of joy and inspiration, shaping my interests and perspective on the world.</p>
-      </div>
-    </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2023 Justin's Portofolio</p>
+    </footer>
   </div>
   
-  <div class="footer">
-    <h2>11.10.2023</h2>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </div>
 </body>

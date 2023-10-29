@@ -1,85 +1,92 @@
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="styled.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>HCI ASSIGNMENT-02</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<style>
+  .social-icons {
+    width: 40vw;
+    height: 30vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+</style>
 </head>
 <body>
-    <header class="top-border">
-        <div class="container">
-            <h1 margin=0;>Shark charity website</h1>
-        </div>
-    </header>
-    <main class="survey-container">
-        <section class="survey-legend">
-            <h2>Survey </h2>
-            
-        </section>
-        <section class="survey-questions">
-            <fieldset class="survey-fieldset">
-                <legend>Shark Conservation Survey</legend>
-                <div class="survey-question">
-                    <span>How familiar are you with the current status of shark populations and their conservation needs?</span>
-                    <br>
-                    <label for="familiar-very"><input  required type="radio" name="familiarity" id="familiar-very" value="very-familiar">Very Familiar</label>
-                    <label for="familiar-somewhat"><input required type="radio" name="familiarity" id="familiar-somewhat" value="somewhat-familiar">Somewhat Familiar</label>
-                    <label for="familiar-not"><input required type="radio" name="familiarity" id="familiar-not" value="not-familiar">Not Familiar at All</label>
-                </div>
-                <div class="survey-question">
-                    <span>Are you interested in sharks in general?</span>
-                    <br>
-                    <label for="interest-yes"><input required type="radio" name="interest" id="interest-yes" value="yes">Yes</label>
-                    <label for="interest-no"><input required type="radio" name="interest" id="interest-no" value="no">No</label>
-                </div>
-                <div class="survey-question">
-                    <span>What motivates you to support shark conservation efforts? (Select all that apply)</span>
-                    <br>
-                    <label for="motivation-ecological"><input required type="checkbox" name="motivation" id="motivation-ecological" value="ecological-role">Concern for the ecological role of sharks in the oceans.<br></label>
-                    <label for="motivation-biodiversity"><input required type="checkbox" name="motivation" id="motivation-biodiversity" value="biodiversity">Belief in preserving biodiversity.<br></label>
-                    <label for="motivation-protecting"><input required type="checkbox" name="motivation" id="motivation-protecting" value="protecting-endangered">Interest in protecting endangered species.<br></label>
-                    <label for="motivation-awareness"><input required type="checkbox" name="motivation" id="motivation-awareness" value="awareness">Awareness of the impact of shark finning and overfishing.<br></label>
-                    <label for="motivation-contribute"><input required type="checkbox" name="motivation" id="motivation-contribute" value="contribute-ecosystem">A desire to contribute to marine ecosystem health.<br></label>
-                </div>
-                <div class="survey-question">
-                    <label for="donation-amount">How much do you want to donate?</label>
-                    <input type="text" name="donation-amount" id="donation-amount">
-                </div>
-            </fieldset>
-        </section>
-        <section class="personal-details">
-            <fieldset class="personal-details-fieldset">
-                <legend>Personal Details</legend>
-                <div class="personal-details-input">
-                    <label required for="name">Name:</label>
-                    <input required type="text" name="name" id="name">
-                </div>
-                <div class="personal-details-input">
-                    <label for="email">Email:</label>
-                    <input required type="email" name="email" id="email">
-                </div>
-                <div class="personal-details-input">
-                    <label required for="birth-date">Birth Date:</label>
-                    <input required type="date" name="birth-date" id="birth-date">
-                </div>
-            </fieldset>
-        </section>
-            <form>
-                <button type="button" class="submit-button" onclick="submitForm()">SUBMIT</button>
-            </form>
-        </main>
-    
-        <script>
-            // JavaScript function to handle form submission
-            function submitForm() {
-                // You can add your form submission logic here
-                // For example, you can collect form data and send it to a server
-                // or perform any other necessary actions.
-                
-                // For demonstration purposes, let's show an alert:
-                alert("Form submitted successfully!");
-            }
-        </script>
-    </main>
+<h3 class="display-4">Hobby</h3>
+<nav class="navbar navbar-expand-lg bg-dark border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="Edu.html">My Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Pro.html">Programming Language</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Hobby.html">Hobby</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row my-3 mx-5">
+    <div class="card mx-4 px-2 py-2" style="width: 18rem;">
+      <img src="https://i.pinimg.com/736x/b8/ee/b4/b8eeb4a0241425948162aded80b56c48.jpg" class="card-img-top" alt="Drawing">
+      <div class="card-body">
+        <h5 class="card-title">Drawing</h5>
+        <p class="card-text">Ever since I was a child, I've had a deep-rooted passion for art, and drawing has consistently held its place as one of my most cherised hobbies.</p>
+      </div>
+    </div>
+    <div class="card mx-4 px-2 py-2 " style="width: 18rem;">
+      <img style="width: 270px; height: 271px;" src="https://i.pinimg.com/736x/96/fe/79/96fe79dce4edc0214dd3ee7e4e3e6faf.jpg" class="card-img-top" alt="People playing cards">
+      <div class="card-body">
+        <h5 class="card-title">Cardistry</h5>
+        <p class="card-text">Cardistry is the performance art of card flourishing. Unlike card magic, cardistry is meant to be visually impressive and appear very hard to execute.</p>
+      </div>
+    </div>
+    <div class="card mx-4 px-2 py-2" style="width: 18rem;">
+      <img style="width: 270px; height: 271px;"src="https://i.pinimg.com/564x/5a/47/61/5a47614d077f48946cb7f5313ce72eac.jpg" class="card-img-top" alt="Rubik's Cube">
+      <div class="card-body">
+        <h5 class="card-title">Rubik's Cube</h5>
+        <p class="card-text">The Rubik's Cube was invented in 1974 by Ernõ Rubik, a Hungarian architecture professor.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2023 Justin's Portofolio</p>
+    </footer>
+  </div>
+  
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </div>
 </body>
 </html>
